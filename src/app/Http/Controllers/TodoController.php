@@ -8,10 +8,10 @@ use App\Http\Requests\TodoRequest;
 
 class TodoController extends Controller
 {
+
     public function index()
     {
-        $t = Todo::all();
-        return view('index', ['Todos' => $t]);
+        return view('index');
     }
 
     public function store(TodoRequest $request)
